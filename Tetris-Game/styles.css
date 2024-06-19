@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Dark background */
+  }
+  
+  #gameContainer {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Define columns: scoreboard, main UI */
+    align-items: center;
+    color: #fff;
+    background-image: url("background.jpg"); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #tetrisCanvas {
+    border: none; /* Remove solid border */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  #score, #highScores {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Modern font */
+  }
+  
+  #highScores {
+    margin-top: 20px;
+    border: 1px solid #fff; /* Border */
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle background */
+    padding: 10px; /* Padding for list items */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  #highScoreList {
+    list-style: disc; /* Disc bullets instead of numbers */
+    line-height: 1.5; /* More space between list items */
+  }
+  
+  #highScores h2 {
+    font-size: 1.2em; /* Slightly larger font size for title */
+  }
+  
+  button {
+    background-color: #333; /* Button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  button:hover {
+    background-color: #444; /* Button hover effect */
+  }
+  
+  #pauseGame, #resumeGame {
+    /* Additional styles for hidden buttons */
+    opacity: 0.5; /* Semi-transparent when not active */
+  }
+  
+  /* Centering the main UI within its grid column */
+  .main-ui {
+    grid-column: 2; /* Place content in the second column */
+    justify-self: center;  /* Center content horizontally */
+  }
+  
